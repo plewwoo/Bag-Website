@@ -1,0 +1,102 @@
+<div class="checkout-main">
+    <div class="head">
+        <h1>CHECKOUT</h1>
+    </div>
+
+    <div class="checkout-container">
+        <div class="shipping-info">
+            <h2> <i class="fas fa-truck"></i> SHIPPING INFORMATION</h2>
+            <div class="contact-form">
+                <div class="info">
+                    <span>email</span>
+                    <br>
+                    <input type="text">
+                </div>
+            </div>
+
+        <form action="/buy" method="GET">
+            <div class="address-form">
+                <h2> <i class="fas fa-map-marker-alt"></i> DELIVERY ADDRESS</h2>
+                <div class="info">
+                    <span>First Name</span>
+                    <br>
+                    <input type="text" required>
+                </div>
+                <div class="info">
+                    <span>Last Name</span>
+                    <br>
+                    <input type="text" required>
+                </div>
+
+                <div class="info">
+                    <span>Street Address</span required>
+                    <br>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <span>Province</span required>
+                    <br>
+                    <input type="text">
+                </div>
+                {{!-- <div class="select-info">
+                    <label for="Province">Province</label required>
+                    <br>
+                    <select id="province" name="province">
+                        <option value="None"> </option>
+                        <option value="Bangkok">Bangkok</option>
+                        <option value="Rayong">Rayong</option>
+                        <option value="Chonburi">Chonburi</option>
+                    </select>
+                </div> --}}
+                <div class="info">
+                    <span>Sub-district</span required>
+                    <br>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <span>District</span required>
+                    <br>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <span>Postal Code</span required>
+                    <br>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <span>Phone</span required>
+                    <br>
+                    <input type="text">
+                </div>
+            </div>
+                <button type="submit">CHECKOUT</button>
+            {{!-- <a class="checkout-btn" href="/buy"><button>CHECKOUT</button></a> --}}
+        </form>
+        </div>
+
+        <div class="summary">
+            <h2>SUMMARY</h2>
+            {{#if products}}
+            {{#each products}}
+            <div class="product-flex">
+                <img src="{{this.item.imgCart}}">
+                <div class="product-flex-detail">
+                    <p>X : {{this.qty}}</p>
+                    <p>{{this.item.name}}</p>
+                </div>
+                <div class="product-flex-price">
+                    <p>{{this.price}} ฿</p>
+                </div>
+            </div>
+            {{/each}}
+            <hr>
+            <div class="product-flex-totalPrice">
+                <p class="order-total">Order Total : </p>
+                <p class="total-price">{{totalPrice}} ฿</p>
+            </div>
+            {{else}}
+            <p>No Item In Cart</p>
+            {{/if}}
+
+        </div>
+    </div>

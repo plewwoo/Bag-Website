@@ -1,0 +1,33 @@
+{{#each all_data}}
+  <div class="product-page">
+    <h1>{{this.name}}</h1>
+    <h3 class="desc">{{this.desc}}</h3>
+
+    <div class="product-container">
+      <div class="product-img-box">
+        {{#each this.imgUrl}}
+          <img src="{{this}}" />
+        {{/each}}
+      </div>
+
+      <div class="product-detail">
+        <h4>{{this.name}}</h4>
+        <p>{{this.desc}}</p>
+        <p>PRICE : {{this.price}} BAHT</p>
+        {{#each this.detail}}
+          <p>{{this}}</p>
+        {{/each}}
+        <h4>MATERIALS</h4>
+        <p>{{this.material}}</p>
+        <h4>DIMENSION</h4>
+        {{#each this.dimension}}
+          <p>{{this}}</p>
+        {{/each}}
+        <div class="buy-btn">
+          <a class="add-cart" href="/checkout/{{id}}"><button>BUY NOW</button></a>
+          <a class="add-cart" href="/add-to-cart/{{id}}"><button>ADD TO CART</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}

@@ -1,0 +1,69 @@
+<div class="addProduct-main">
+  <div class="head">
+    <h1>ADD PRODUCT</h1>
+  </div>
+  <div class="addProduct-page">
+    <form class="addProduct-form" action="/addProduct" method="POST">
+      <div class="add-info">
+        <h3>Name</h3>
+        <input type="text" name="name" required />
+      </div>
+      <div class="add-info">
+        <h3>Type</h3>
+        <select name="type" id="type">
+          <option value="bags">Bags</option>
+          <option value="accessories">Accessories</option>
+        </select>
+      </div>
+      <div class="add-info">
+        <h3>Category</h3>
+        <select name="category" id="type">
+          <option value="backpack">Backpacks</option>
+          <option value="messenger">Messenger Bags</option>
+          <option value="tote">Shopper & Tote Bags</option>
+          <option value="wallets">Wallets</option>
+          <option value="cases">Case & Sleeves</option>
+          <option value="toiletry">Toiletry Bags</option>
+        </select>
+      </div>
+      <div class="add-info">
+        <h3>Product Image</h3>
+        <input type="text" name="imgCart" required />
+      </div>
+      <div class="add-info">
+        <h3>Description</h3>
+        <input type="text" name="desc" required />
+      </div>
+      <div class="add-info">
+        <h3>Details</h3>
+        <input type="text" name="detail" required />
+        <input type="text" name="detail" />
+      </div>
+      <div class="add-info">
+        <h3>Price</h3>
+        <input type="number" name="price" required />
+      </div>
+      <div class="add-info">
+        <h3>Product Details Image (รูปรายละเอียดของสินค้า)</h3>
+        <input type="text" name="imgUrl" />
+        <input type="text" name="imgUrl" />
+        <input type="text" name="imgUrl" />
+        <input type="text" name="imgUrl" />
+      </div>
+      <div class="add-info">
+        <h3>Material</h3>
+        <input type="text" name="material" />
+        <input type="text" name="material" />
+        <input type="text" name="material" />
+      </div>
+      <div class="add-info">
+        <h3>Dimension</h3>
+        <input type="text" name="dimension" />
+        <input type="text" name="dimension" />
+        <input type="text" name="dimension" />
+        <input type="text" name="dimension" />
+      </div>
+      <button class="next-btn" type="submit">Save</button>
+    </form>
+  </div>
+</div>

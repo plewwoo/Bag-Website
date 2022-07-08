@@ -1,0 +1,16 @@
+<div class="sub-container">
+  <h2 class="cats">{{cats}}</h2>
+
+  <ul class="bags">
+    {{#each all_data}}
+      <li class="bags-item">
+        <a href="/{{type}}/{{category}}/{{this.id}}">
+          <img src="{{this.imgCart}}" class="bags-item-img" />
+        </a>
+        <div class="bags-item-name">
+          {{this.name}}
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</div>

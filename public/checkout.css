@@ -1,0 +1,161 @@
+.checkout-main {
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+.head {
+  text-align: center;
+}
+
+.checkout-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.shipping-info {
+  width: 70%;
+  margin: 0 10px;
+  background-color: white;
+}
+
+.shipping-info h2 {
+  padding: 0 10px;
+}
+
+.shipping-info p {
+  padding: 0 10px;
+}
+
+.shipping-info .info {
+  display: inline-block;
+  width: 350px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.shipping-info input,
+select {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 80%;
+  height: 25px;
+}
+
+.shipping-info input:focus {
+  outline: none;
+}
+
+.shipping-info select:focus {
+  outline: none;
+}
+
+.shipping-info .select-info {
+  display: inline-block;
+  width: 350px;
+  margin: 0;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.summary {
+  width: 40%;
+  margin: 0 10px;
+  background-color: white;
+}
+
+.product-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+.product-flex-detail {
+  width: 50%;
+}
+
+.product-flex-price {
+  width: 25%;
+}
+
+.product-flex-totalPrice {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-flex-totalPrice .order-total {
+  padding-left: 30px;
+}
+
+.product-flex-totalPrice .total-price {
+  padding-right: 25px;
+}
+
+.checkout-btn button {
+  box-sizing: border-box;
+  object-fit: cover;
+  margin: 20px 10px;
+  width: 50%;
+}
+
+.summary h2,
+p {
+  padding: 0 10px;
+}
+
+.summary img {
+  width: 30%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .checkout-main {
+    width: 100%;
+  }
+
+  .checkout-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .shipping-info {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .summary {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .checkout-main {
+    width: 100%;
+  }
+
+  .checkout-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .shipping-info {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .summary {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+}

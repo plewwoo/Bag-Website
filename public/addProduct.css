@@ -1,0 +1,60 @@
+.addProduct-main {
+  background-color: #f2f2f2;
+}
+
+.addProduct-page {
+  width: 600px;
+  margin: auto;
+  background-color: white;
+}
+
+.addProduct-form {
+  padding: 10px;
+}
+
+.add-info {
+  width: 580px;
+  padding: 10px;
+}
+
+.add-info input {
+  font-size: 20px;
+  width: 100%;
+}
+
+.add-info select {
+  font-size: 20px;
+  width: 100%;
+}
+
+input,
+select {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 50%;
+  height: 25px;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+.next-btn {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .addProduct-page {
+    width: 100%;
+    margin: auto;
+  }
+
+  .add-info {
+    width: 100%;
+    padding: 10px;
+  }
+} ;

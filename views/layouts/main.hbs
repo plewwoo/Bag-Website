@@ -1,0 +1,81 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{#if isTitle}}
+      <title>{{title}}</title>
+    {{else}}
+      {{#each all_item_data}}
+        <title>
+          {{this.name}}
+          | FREITAG
+        </title>
+      {{/each}}
+    {{/if}}
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/product.css" />
+    <link rel="stylesheet" href="/checkout.css" />
+    <link rel="stylesheet" href="/addProduct.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="nav">
+          <div class="dropdown">
+            <a href="/">
+              <button class="brand">FREITAG</button>
+            </a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">BAGS</button>
+            <div class="dropdown-content">
+              <a href="/bags/backpack">Backpacks</a>
+              <a href="/bags/messenger">Messenger Bags</a>
+              <a href="/bags/tote">Shopper & Tote Bags</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">ACCESSORIES</button>
+            <div class="dropdown-content">
+              <a href="/accessories/wallets">Wallets</a>
+              <a href="/accessories/cases">Case & Sleeves</a>
+              <a href="/accessories/toiletry">Toiletry Bags</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropdown">
+            <a href="/addProductPage">
+              <button class="dropbtn"><i class="fas fa-plus-circle"></i></i>
+              </button>
+            </a>
+          </div>
+          <div class="dropdown">
+            <a href="/checkout">
+              <button class="dropbtn"><i class="fas fa-shopping-cart"></i>
+                {{session.cart.totalQty}}</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      {{{body}}}
+    </main>
+  </body>
+
+</html>
